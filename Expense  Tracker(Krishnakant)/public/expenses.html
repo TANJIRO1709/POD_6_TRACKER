@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="Dashboard_body">
+    <div class="House">
+        <a href="../dashboard .html">
+            <button>
+                <img src="../assets/house.png" class="button-icon" alt="house">
+                Home
+            </button>
+        </a>
+    </div>
+
+    <div class="heading_text">
+        <img src="../assets/expense_tracker_transparent-removebg-preview.png"/>
+    </div>
+
+    <div class="d_N">
+        <div class="input-group">
+            <label for="date" style="color: black;">Date:</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="input-group">
+            <label for="name" style="color: black;">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+    </div>
+
+   <div class="bill_area">
+     <div class="Bill">
+         <ol id="category-element">
+             <!-- Initial guiding text will be added by JavaScript -->
+         </ol>
+     </div>
+
+     <div class="add_button">
+        <div class="add_button">
+            <button id="add">Add item</button>
+        </div>
+    
+        <div class="category">
+            <button id="category">Add category</button>
+        </div>
+     </div>
+    </div>
+
+   <div class="analysis-button-container">
+        <button id="analysis" class="analysis-btn">
+            View Detailed Analysis
+        </button>
+   </div>
+    
+<script src="../logic.js"></script>  
+</body>
+
+
+</html>

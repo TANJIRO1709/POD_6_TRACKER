@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Analysis</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="Dashboard_body">
+    <div class="House">
+        <a href="../dashboard .html">
+            <button>
+                <img src="../assets/house.png" class="button-icon" alt="house">
+                Home
+            </button>
+        </a>
+    </div>
+
+    <div class="expense-info">
+        <div class="expense-card">
+            <h3 class="expense-title">Expense Analysis</h3>
+            <div class="expense-grid">
+                <div class="expense-item">
+                    <p class="expense-text">
+                        Most expensive item:
+                        <span id="most-expensive-item" class="highlight-text"></span>
+                    </p>
+                </div>
+                <div class="expense-item">
+                    <p class="expense-text">
+                        Least expensive item:
+                        <span id="least-expensive-item" class="highlight-text"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="analysis-container">
+        <div class="chart-wrapper">
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+
+    <div class="split-bill-container">
+        <div class="split-bill-card">
+            <h3 class="split-title">Split Bill</h3>
+            <div class="split-input-area" style="display: none;">
+                <input type="number" id="peopleCount" placeholder="Enter number of people" min="1">
+                <p class="result-text" id="splitResult"></p>
+            </div>
+            <button id="splitBill" class="split-bill-btn">
+                Split Bill
+            </button>
+        </div>
+    </div>
+
+    <script src="./analysis.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="Dashboard_body">
+    <div class="House">
+        <a href="../dashboard .html">
+            <button>
+                <img src="../assets/house.png" class="button-icon" alt="house">
+                Home
+            </button>
+        </a>
+    </div>
+
+    <div class="wallet-container">
+        <div class="wallet-card">
+            <h2>My Wallet</h2>
+            <div class="balance-section">
+                <h3>Current Balance</h3>
+                <p class="balance-amount">Rs. <span id="currentBalance">0.00</span></p>
+            </div>
+            
+            <div class="add-money-section">
+                <h3>Add Money</h3>
+                <div class="input-group">
+                    <input type="number" id="amountInput" placeholder="Enter amount" min="1">
+                    <button id="addMoneyBtn" class="add-money-btn">Add Money</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="transactions-card">
+            <h3>Transaction History</h3>
+            <div class="transactions-list" id="transactionsList">
+                <!-- Transactions will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./wallet.js"></script>
+</body>
+</html>

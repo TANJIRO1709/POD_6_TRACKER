@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Expenses</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="Dashboard_body">
+    <div class="House">
+        <a href="../dashboard .html">
+            <button>
+                <img src="../assets/house.png" class="button-icon" alt="house">
+                Home
+            </button>
+        </a>
+    </div>
+
+    <div class="previous-expenses-container">
+        <h2>Previous Expenses</h2>
+        <div class="table-wrapper">
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Total Amount</th>
+                        <th>Categories</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseTableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./previous-expenses.js"></script>
+</body>
+</html>
