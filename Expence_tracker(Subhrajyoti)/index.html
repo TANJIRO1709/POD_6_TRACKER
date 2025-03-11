@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- First Page -->
+        <div id="page1">
+            <div class="heading">
+                <h1>EXPENSE TRACKER</h1>
+            </div>
+            <div class="balance">
+                <h2>Current Balance</h2>
+                <h1 id="balance">$0.00</h1>
+            </div>
+            <div class="incomeExpense">
+                <div class="income">
+                    <h3>INCOME</h3>
+                    <p id="moneyPlus" class="money Plus">+$0.00</p>
+                </div>
+                <div class="expense">
+                    <h3>EXPENSE</h3>
+                    <p id="moneyMins" class="money Mins">-$0.00</p>
+                </div>
+            </div>
+            <div class="trans">
+
+                <h3>Transaction History</h3>
+            </div>
+            <ul id="list" class="list">
+                <li>No Transaction</li>
+            </ul>
+            <h3 id="newtr">Add New Transaction</h3>
+            <form id="form">
+                <div class="formControl">
+                    <label for="text">Transaction Name</label>
+                    <input type="text" placeholder="Enter Description" id="text" required />
+                </div>
+                <div class="formControl">
+                    <label for="amount">Amount</label>
+                    <input type="number" placeholder="Enter Amount" id="amount" required />
+                    <p>(Positive + income | Negative - expense)</p>
+                    <label for="date">Transaction Date</label>
+                    <input type="date" id="expensedate" required />
+                </div>
+                <button class="btn">Add Transaction</button>
+            </form>
+            <!-- Button to navigate to the second page -->
+            <button class="btn" id="viewPieChartBtn" hidden onclick="showPage2()">View Pie Chart</button>
+        </div>
+
+        <!-- Second Page -->
+        <div id="page2" style="display: none;">
+            <div class="heading">
+                <h1>PIE CHART</h1>
+            </div>
+            <!-- Pie Chart Container -->
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <!-- Button to go back to the first page -->
+            <button class="btn" onclick="showPage1()">Back to Transactions</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color:white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(15, 31, 73);
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(108, 163, 189);
+    border: 2px solid #190f88;
+}
+
+.heading h1 {
+    width: 100%;
+    color: #c8c8cf;
+    box-shadow: 0 0 20px #42519b;
+    font-weight: bold;
+    text-decoration: underline overline;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.balance {
+    text-align: center; 
+    color: #f6f8fa;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin-top: 20px;
+    border: 3px solid #d7bc10;
+    box-shadow:0 0 10px #070e25;
+}
+
+.balance h1 {
+    color:#c8d62ee1;
+    margin: 0;
+    font-size: 2rem;
+}
+.balance h2 {
+    color:#c8d62ee1;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.incomeExpense {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.income {
+    margin-right: 10px;
+    box-shadow: 0 0 10px #070e25;
+    border-radius: 10px;
+    color:#3bb549;
+    flex: 1;
+    text-align: center;
+    border: 3px solid;
+}
+
+.expense {
+    border-radius: 10px;
+    color: #ff0505;
+    flex: 1;
+    text-align: center;
+    border: 3px solid;
+    box-shadow: 0 0 10px #070e25;
+}
+
+.trans h3{
+    color: white;
+    font-family: serif;
+    font-weight: 500;
+
+}
+.money {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.Plus {
+    color: #3bb549;
+    font-weight: 800;
+}
+
+.plus {
+    color: #3bb549;
+    font-weight: 800;
+}
+
+.Mins {
+    color: #c12626;
+    font-weight: 800;
+}
+
+.minus {
+    color: #c12626;
+    font-weight: 800;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.list li {
+    background-color: #1a0353;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #536196;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list{
+    color:rgb(186, 188, 199);
+    font-size: 400;
+}
+.list .plus span,
+.list .minus span {
+    padding-right: 5px;
+}
+
+.list .plus {
+    border-color: #3bb549;
+}
+
+.list .minus {
+    border-color: #d61d1d;
+}
+
+.formControl label {
+  color: rgb(200, 202, 216);
+   font-family: serif;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: 350;
+
+}
+
+.formControl input {
+    width: 100%;
+    padding: 8px;
+    background-color: #0f042b;
+    border: 1px solid #536196;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+input::placeholder{
+    color: rgb(190, 184, 184);
+}
+#text{
+    color: white;
+}
+#amount{
+    color: white;
+}
+
+.btn {
+    margin-left: 50px;
+    width: 70%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #1f0e80;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+input[type=date]{
+    color:rgb(190, 184, 184) ;
+}
+
+.btn:hover {
+    background-color: #42519b;
+}
+#newtr{
+    color: white ;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-left: 85px;
+}
+
+p{
+    color: rgb(191, 187, 187);
+    font-size: 0.8rem;
+}
+.delete {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+    background-color: #ff0505;
+    border-radius: 50%;
+}
+
+/* Pie Chart Container */
+.chart-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide the second page by default */
+#page2 {
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .balance h1 {
+        font-size: 1.5rem;
+    }
+
+    .incomeExpense {
+        flex-direction: row;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
