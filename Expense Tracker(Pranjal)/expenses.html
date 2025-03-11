@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" type="text/css" href="exp.css">
+    </head>
+    <body>
+        <div class="back">
+        <h1>
+            Expense Tracker
+        </h1>
+        <input type="number" id="balance" placeholder="Enter Account Balance">
+        <input type="number" id="daily_limit" placeholder="Enter Maximum Daily Limit">
+        <button onclick="setBalance()">Set Account Balance</button>
+        <p id="invalid"></p>
+        <h3>Remaining Balance: <span id="remain_balance"></span></h3>
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <label><input type="date" id="date">
+        <select id="category">
+            <option value="none" selected disabled hidden>Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Others">Others</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+        <div><p id="inv"></p></div>
+        <div><p id="max"></p></div>
+        <button onclick="showExpense()">Show Expense Details</button>
+        <button onclick="hideExpense()">Hide Expense Details</button>
+        </div>
+        <div id="blur">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="expense"></tbody>
+        </table>
+        <div id="piechart"></div>
+        <div id="legend">
+            <div id="color"><span id="green"></span>Food</div>
+            <div id="color"><span id="red"></span>Transport</div>
+            <div id="color"><span id="blue"></span>Shopping</div>
+            <div id="color"><span id="orange"></span>Entertainment</div>
+            <div id="color"><span id="lightgray"></span>Others</div>
+        </div>
+        </div>
+        <script src="expense.js"></script>
+    </body>
+
+</html>
